@@ -1,0 +1,63 @@
+# Model weights and checkpoints
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+saves/
+checkpoints/
+
+# Data (private patient data - do not upload)
+*.xlsx
+*.xls
+*.json
+!data/dataset_info.json
+!configs/*.yaml
+*.npy
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tif
+*.tiff
+
+# Results (regeneratable)
+results/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+wandb/
+runs/
+
+# Environment
+.env
+venv/
+.venv/
+
+# LLaMA-Factory cache
+llamaboard_cache/

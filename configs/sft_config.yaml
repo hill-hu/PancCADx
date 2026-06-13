@@ -1,0 +1,59 @@
+# PancCADx SFT Training Configuration
+# Framework: LLaMA-Factory
+# Usage: llamafactory-cli train configs/sft_config.yaml
+
+### Model ###
+model_name_or_path: Qwen/Qwen3-VL-8B-Thinking
+trust_remote_code: true
+
+### Finetuning ###
+stage: sft
+finetuning_type: lora
+lora_rank: 128
+lora_alpha: 256
+lora_dropout: 0
+lora_target: all
+
+### Freezing Strategy ###
+freeze_multi_modal_projector: true
+freeze_vision_tower: false
+
+### Dataset ###
+dataset: panccadx_sft_train
+dataset_dir: data
+cutoff_len: 4096
+max_samples: 100000
+preprocessing_num_workers: 16
+
+### Training ###
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 1.0e-4
+lr_scheduler_type: cosine
+num_train_epochs: 20.0
+max_grad_norm: 1.0
+warmup_steps: 0
+optim: adamw_torch
+bf16: true
+flash_attn: auto
+
+### Multimodal ###
+image_max_pixels: 589824  # 768*768
+image_min_pixels: 1024    # 32*32
+video_max_pixels: 65536
+video_min_pixels: 256
+
+### Thinking ###
+enable_thinking: true
+template: qwen3_vl
+
+### Logging ###
+logging_steps: 5
+save_steps: 1000
+plot_loss: true
+report_to: none
+
+### Output ###
+output_dir: saves/panccadx_sft
+do_train: true
+ddp_timeout: 180000000
