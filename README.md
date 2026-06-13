@@ -156,8 +156,7 @@ python evaluation/evaluate_multicenter.py --input results/predictions.jsonl
 
 | Model | Description | Link |
 |-------|-------------|------|
-| PancCADx-SFT | SFT-only LoRA adapter | [Coming Soon] |
-| PancCADx-DPO | SFT+DPO LoRA adapter | [Coming Soon] |
+| PancCADx-DPO | SFT+DPO LoRA adapter (final) | [shan1984/PancCADx-DPO](https://huggingface.co/shan1984/PancCADx-DPO) |
 
 Base model: [Qwen3-VL-8B-Thinking](https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking)
 
