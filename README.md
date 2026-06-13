@@ -1,8 +1,8 @@
-# PancCADx: Chain-of-Thought Reasoning for EUS-Based Pancreatic Cancer Diagnosis
+# PancCADx: A Multimodal Framework for Pancreatic Cancer Diagnosis
 
 [![MICCAI 2026](https://img.shields.io/badge/MICCAI-2026-blue)](https://conferences.miccai.org/2026)
 
-Official implementation of **"Chain-of-Thought Multimodal Reasoning for Interpretable Pancreatic Cancer Diagnosis via Endoscopic Ultrasound"**, accepted at MICCAI 2026.
+Official implementation of **"PancCADx: A Multimodal Framework for Pancreatic Cancer Diagnosis"**, accepted at MICCAI 2026.
 
 ## Overview
 
