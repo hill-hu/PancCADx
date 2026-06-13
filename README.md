@@ -165,8 +165,8 @@ Base model: [Qwen3-VL-8B-Thinking](https://huggingface.co/Qwen/Qwen3-VL-8B-Think
 
 ```bibtex
 @inproceedings{hu2026panccadx,
-  title={Chain-of-Thought Multimodal Reasoning for Interpretable Pancreatic Cancer Diagnosis via Endoscopic Ultrasound},
-  author={Hu, Shan and others},
+  title={PancCADx: A Multimodal Framework for Pancreatic Cancer Diagnosis},
+  author={Hu, Shan and Xiao, Changhong and Qin, Xianzheng and Mei, Bin and Cheng, Bin and Wang, Zhongyuan},
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
   year={2026}
 }
